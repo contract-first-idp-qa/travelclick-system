@@ -1,0 +1,6 @@
+system: travelclick
+component: inventory
+environment: dev
+
+image:
+  tag: latest
