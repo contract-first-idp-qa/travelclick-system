@@ -12,8 +12,12 @@ spec:
     targetRevision: HEAD
     path: spring-boot-application
     helm:
-      valueFiles:
-        - values-inventory-dev.yaml
+      values: |
+        system: travelclick
+        component: inventory
+        environment: dev
+        image:
+          tag: latest
   destination:
     server: https://kubernetes.default.svc
     namespace: travelclick-dev
