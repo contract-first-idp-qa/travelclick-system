@@ -14,8 +14,8 @@ spec:
     helm:
       values: |
         domain: contract-first-idp-qa
-        system: default-application
-        component: default-service
+        system: travelclick
+        component: inventory-pipeline
   destination:
     server: https://kubernetes.default.svc
     namespace: travelclick-build
