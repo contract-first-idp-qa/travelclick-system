@@ -13,7 +13,7 @@ spec:
     path: spring-boot-pipeline
     helm:
       valueFiles:
-        - values-inventory-pipeline.yaml
+        - components/values-inventory-pipeline.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: travelclick-build
